@@ -1,0 +1,176 @@
+# STARTING PROCESS 
+# -- paste results of 'diff all' here --
+
+diff #TO_CHECK (maybe safe)
+
+# version
+# Betaflight / STM32F405 (S405) 4.2.2 Aug 16 2020 / 01:46:41 (e833ac612) MSP API: 1.43
+# config: manufacturer_id: AIRB, board_name: OMNIBUSF4SD, version: 3a35e73b, date: 2019-09-30T05:46:12Z
+
+# start the command batch
+batch start #SAFE
+
+board_name OMNIBUSF4SD #SAFE
+manufacturer_id AIRB #SAFE
+
+# name: Le_Tic Wizard
+
+# feature
+feature -AIRMODE #SAFE
+feature MOTOR_STOP #SAFE
+feature TELEMETRY #SAFE
+feature LED_STRIP #SAFE
+
+# beeper
+beeper -ARMING_GPS_FIX #SAFE
+beeper -BAT_LOW #SAFE
+beeper -GPS_STATUS #SAFE
+beeper -READY_BEEP #SAFE
+beeper -ARMED #SAFE
+beeper -ON_USB #SAFE
+beeper -BLACKBOX_ERASE #SAFE
+beeper -CRASH_FLIP #SAFE
+beeper -CAM_CONNECTION_OPEN #SAFE
+beeper -CAM_CONNECTION_CLOSE #SAFE
+
+# beacon
+beacon RX_LOST #SAFE
+beacon RX_SET #SAFE
+
+# serial
+serial 2 64 115200 57600 0 115200 #SAFE
+serial 5 0 115200 57600 0 115200 #SAFE
+
+# led
+led 0 11,11::CO:11 #SAFE
+led 1 11,12::CO:11 #SAFE
+led 2 11,13::CO:11 #SAFE
+led 3 11,14::CO:11 #SAFE
+led 4 11,15::CO:11 #SAFE
+led 5 15,11::CO:11 #SAFE
+led 6 15,12::CO:11 #SAFE
+led 7 15,13::CO:11 #SAFE
+led 8 15,14::CO:11 #SAFE
+led 9 15,15::CO:11 #SAFE
+
+# aux
+aux 0 0 0 1700 2100 0 0 #SAFE
+aux 1 1 1 1700 2100 0 0 #SAFE
+aux 2 13 2 1300 1700 0 0 #SAFE
+aux 3 19 3 1700 2100 0 0 #SAFE
+aux 4 28 1 900 1700 0 0 #SAFE
+aux 5 35 2 1700 2100 0 0 #SAFE
+aux 6 47 1 1300 1700 0 0 #SAFE
+
+# adjrange
+adjrange 0 0 3 900 2100 29 3 0 0 #TO_CHECK (maybe safe)
+
+# rxfail
+rxfail 6 s 1500 #TO_CHECK (maybe safe)
+
+# master
+# set gyro_lowpass2_hz = 300 #UNSAFE !!
+# set dyn_notch_width_percent = 0 #UNSAFE !!
+# set dyn_notch_q = 250 #UNSAFE !!
+# set dyn_notch_min_hz = 70 #UNSAFE !!
+# set dyn_notch_max_hz = 350 #UNSAFE !!
+# set dyn_lpf_gyro_min_hz = 240 #UNSAFE !!
+# set dyn_lpf_gyro_max_hz = 600 #UNSAFE !!
+# set acc_calibration = 126,86,-302,1 #UNSAFE !!
+set mag_hardware = NONE #TO_CHECK (maybe safe)
+set min_check = 1015 #SAFE
+set max_check = 1990 #SAFE
+set rssi_channel = 16 #TO_CHECK (maybe safe)
+# set rc_smoothing_derivative_type = BIQUAD #UNSAFE !!
+set serialrx_provider = FPORT #SAFE
+set serialrx_inverted = ON #SAFE
+set serialrx_halfduplex = ON #SAFE
+set blackbox_p_ratio = 64 #SAFE
+set dshot_bidir = ON #SAFE
+set motor_pwm_protocol = DSHOT600 #TO_CHECK (maybe safe)
+set beeper_dshot_beacon_tone = 2 #SAFE
+set small_angle = 180 #SAFE
+set deadband = 3 #TO_CHECK (maybe safe)
+set yaw_deadband = 2 #TO_CHECK (maybe safe)
+set osd_warn_launch_control = OFF #SAFE
+set osd_warn_no_gps_rescue = OFF #SAFE
+set osd_warn_gps_rescue_disabled = OFF #SAFE
+set osd_warn_rssi = ON #SAFE
+set osd_rssi_alarm = 30 #SAFE
+set osd_rssi_dbm_alarm = 196 #SAFE
+###ERROR: diff: CORRUPTED CONFIG: osd_rssi_dbm_alarm = 196###
+set osd_cap_alarm = 1300 #SAFE
+set osd_tim2 = 1281 #SAFE
+set osd_vbat_pos = 6594 #SAFE
+set osd_rssi_pos = 6192 #SAFE
+set osd_tim_1_pos = 4556 #SAFE
+set osd_tim_2_pos = 6614 #SAFE
+set osd_flymode_pos = 4269 #SAFE
+set osd_craft_name_pos = 6178 #SAFE
+set osd_altitude_pos = 6241 #SAFE
+set osd_pidrate_profile_pos = 6201 #SAFE
+set osd_warnings_pos = 14441 #SAFE
+set osd_avg_cell_voltage_pos = 4514 #SAFE
+set osd_pit_ang_pos = 4534 #SAFE
+set osd_rol_ang_pos = 4524 #SAFE
+set osd_disarmed_pos = 6411 #SAFE
+set osd_esc_tmp_pos = 4215 #SAFE
+set osd_esc_rpm_pos = 4247 #SAFE
+set osd_esc_rpm_freq_pos = 4226 #SAFE
+set osd_rtc_date_time_pos = 425 #SAFE
+set osd_adjustment_range_pos = 168 #SAFE
+set osd_core_temp_pos = 4183 #SAFE
+set osd_log_status_pos = 354 #SAFE
+set osd_stick_overlay_left_pos = 4353 #SAFE
+set osd_stick_overlay_right_pos = 4374 #SAFE
+set osd_profile_name_pos = 300 #SAFE
+set osd_stat_rtc_date_time = ON #SAFE
+set osd_stat_tim_1 = ON #SAFE
+set osd_stat_max_spd = OFF #SAFE
+set osd_stat_endbatt = ON #SAFE
+set osd_stat_battery = ON #SAFE
+set osd_stat_max_curr = OFF #SAFE
+set osd_stat_used_mah = OFF #SAFE
+set osd_stat_max_alt = ON #SAFE
+set osd_stat_max_esc_rpm = ON #SAFE
+set usb_hid_cdc = ON #TO_CHECK (maybe safe)
+# set gyro_1_align_yaw = 2700 #UNSAFE !!
+# set gyro_rpm_notch_harmonics = 2 #UNSAFE !!
+set name = Le_Tic Wizard #SAFE
+
+profile 0 #TO_CHECK (maybe safe)
+
+# profile 0
+# set dyn_lpf_dterm_min_hz = 84 #UNSAFE !!
+# set dyn_lpf_dterm_max_hz = 204 #UNSAFE !!
+# set dterm_lowpass2_hz = 180 #UNSAFE !!
+set p_pitch = 69 #TO_CHECK (maybe safe)
+set d_pitch = 44 #TO_CHECK (maybe safe)
+set f_pitch = 171 #TO_CHECK (maybe safe)
+set p_roll = 63 #TO_CHECK (maybe safe)
+set d_roll = 40 #TO_CHECK (maybe safe)
+set f_roll = 162 #TO_CHECK (maybe safe)
+set p_yaw = 68 #TO_CHECK (maybe safe)
+set f_yaw = 162 #TO_CHECK (maybe safe)
+set d_min_roll = 0 #TO_CHECK (maybe safe)
+set d_min_pitch = 0 #TO_CHECK (maybe safe)
+
+# rateprofile 0 #UNSAFE_SECTION !!
+
+# rateprofile 0
+# set rates_type = ACTUAL #UNSAFE_SECTION !!
+# set roll_rc_rate = 2 #UNSAFE_SECTION !!
+# set pitch_rc_rate = 2 #UNSAFE_SECTION !!
+# set yaw_rc_rate = 2 #UNSAFE_SECTION !!
+# set roll_expo = 25 #UNSAFE_SECTION !!
+# set pitch_expo = 25 #UNSAFE_SECTION !!
+# set yaw_expo = 20 #UNSAFE_SECTION !!
+# set roll_srate = 72 #UNSAFE_SECTION !!
+# set pitch_srate = 72 #UNSAFE_SECTION !!
+# set yaw_srate = 67 #UNSAFE_SECTION !!
+# set tpa_breakpoint = 1750 #UNSAFE_SECTION !!
+
+# end the command batch
+batch end #SAFE
+
+# 

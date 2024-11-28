@@ -1,25 +1,22 @@
-####################################
-########  GepRC Elegant 6  #########
-####################################
+# GepRC Elegant 6
 
-# name
+## name
 name Le_Tic Elegant 6
 
-# feature
+## feature
 feature -AIRMODE
 feature TELEMETRY
 feature LED_STRIP
 feature OSD
 
-# serial
+## serial
 serial 1 2048 115200 57600 0 115200	# T2 VTX
 serial 3 64 115200 57600 0 115200	# T4/R4 RX
 
-# beeper
-# CONFIGURAR <===
+## beeper
+CONFIGURAR <====
 
-# led ===> Estudar e melhorar esta configuracao <===
-# Copiado do Elegant 5
+## led ===> Estudar e melhorar esta configuracao <=== Copiado do Elegant 5
 led 0 7,7::ATOIW:8
 led 1 7,8::ATOIW:8
 led 2 7,9::ATO:10
@@ -40,7 +37,7 @@ led 16 8,14::ATOIW:0
 led 17 8,15::ATOIW:0
 
 
-# vtxtable
+## vtxtable
 vtxtable bands 5
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -52,7 +49,7 @@ vtxtable powerlevels 4
 vtxtable powervalues 14 20 26 36
 vtxtable powerlabels 25 100 400 1W+
 
-# master
+## master
 set acc_calibration = -3,59,-4279,1
 
 set min_check = 1010
@@ -63,8 +60,8 @@ set yaw_deadband = 2
 
 set pid_process_denom = 2  #??
 
-    set osd_vtx_channel_pos = 18820
-    set osd_canvas_height = 13
+set osd_vtx_channel_pos = 18820
+set osd_canvas_height = 13
 
 set gyro_1_sensor_align = CW270FLIP
 set gyro_1_align_pitch = 1800
@@ -77,7 +74,7 @@ profile 2
 
 profile 3
 
-# restore original profile selection
+## restore original profile selection
 profile 0
 
 rateprofile 0
@@ -88,6 +85,6 @@ rateprofile 2
 
 rateprofile 3
 
-# restore original rateprofile selection
+## restore original rateprofile selection
 rateprofile 0
 

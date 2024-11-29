@@ -1,0 +1,132 @@
+diff
+
+# version
+# Betaflight / STM32F411 (S411) 4.4.0 Feb 14 2023 / 05:05:32 (4605309d8) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+board_name MATEKF411
+manufacturer_id MTKS
+
+# name: LDARC_HD140
+
+# feature
+feature -SOFTSERIAL
+feature -AIRMODE
+feature -ANTI_GRAVITY
+feature RSSI_ADC
+feature LED_STRIP
+
+# serial
+serial 0 8192 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -BLACKBOX_ERASE
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 7,15:W:FIW:4
+led 1 8,15:E:FIW:4
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 1300 0 0
+aux 2 2 1 1300 1700 0 0
+aux 3 4 1 1300 2100 0 0
+aux 4 13 3 1700 2100 0 0
+aux 5 28 1 1300 2100 0 0
+aux 6 35 3 1700 2100 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 LOWRACE  L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
+vtxtable powerlevels 3
+vtxtable powervalues 25 100 200
+vtxtable powerlabels 25 100 200
+
+# master
+set acc_trim_pitch = -1
+set acc_trim_roll = 3
+set acc_calibration = -79,-21,-319,1
+set serialrx_provider = SBUS
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set bat_capacity = 600
+set vbat_max_cell_voltage = 440
+set vbat_min_cell_voltage = 320
+set vbat_scale = 107
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_tim1 = 2561
+set osd_vbat_pos = 2081
+set osd_rssi_pos = 2424
+set osd_tim_1_pos = 2100
+set osd_tim_2_pos = 53
+set osd_flymode_pos = 2456
+set osd_anti_gravity_pos = 2453
+set osd_vtx_channel_pos = 2132
+set osd_crosshairs_pos = 2253
+set osd_ah_pos = 2126
+set osd_motor_diag_pos = 2401
+set osd_craft_name_pos = 2440
+set osd_warnings_pos = 14601
+set osd_avg_cell_voltage_pos = 2113
+set osd_battery_usage_pos = 8
+set osd_disarmed_pos = 2282
+set osd_esc_tmp_pos = 384
+set osd_flip_arrow_pos = 2222
+set osd_core_temp_pos = 2433
+set osd_canvas_width = 30
+set osd_canvas_height = 13
+set vtx_band = 4
+set vtx_channel = 1
+set vtx_power = 3
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_freq = 5740
+set vcd_video_system = NTSC
+set gyro_1_align_yaw = 1800
+set craft_name = LDARC_HD140
+
+profile 0
+
+# profile 0
+set crash_recovery = ON
+
+rateprofile 0
+
+# rateprofile 0
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
+
+# end the command batch
+batch end
+
+# 

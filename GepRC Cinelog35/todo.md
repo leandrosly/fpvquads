@@ -2,3 +2,5 @@
 - Configurar OSD padrão (copiar do Elegant 6)
 - Verificar fonte "Digital" no OSD
 - Trocar VTX
+- Fazer mount para dji pocket
+

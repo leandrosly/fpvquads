@@ -1,0 +1,25 @@
+Caddx 4k Cinepro
+
+4k 30fps
+Video: MPEG4 Video (H264) 3840x2160 30.008fps 51641kbps [V: Hisilicon VIDEO [eng] (h264 main L5.1, yuv420p, 3840x2160, 51641 kb/s)]
+Audio: AAC 48000Hz stereo 125kbps [A: Hisilicon AUDIO [eng] (aac lc, 48000 Hz, stereo, 125 kb/s)]
+
+2.7k 60fps
+Video: MPEG4 Video (H264) 2704x1520 60.09fps 50664kbps [V: Hisilicon VIDEO [eng] (h264 main L5.0, yuv420p, 2704x1520, 50664 kb/s)]
+Audio: AAC 48000Hz stereo 125kbps [A: Hisilicon AUDIO [eng] (aac lc, 48000 Hz, stereo, 125 kb/s)]
+
+2.7k 30fps
+Video: MPEG4 Video (H264) 1920x1440 60.12fps 50401kbps [V: Hisilicon VIDEO [eng] (h264 main L5.0, yuv420p, 1920x1440, 50401 kb/s)]
+Audio: AAC 48000Hz stereo 125kbps [A: Hisilicon AUDIO [eng] (aac lc, 48000 Hz, stereo, 125 kb/s)]
+
+1080p 90fps
+Video: MPEG4 Video (H264) 1920x1080 89.699fps 45262kbps [V: Hisilicon VIDEO [eng] (h264 main L4.2, yuv420p, 1920x1080, 45262 kb/s)]
+Audio: AAC 48000Hz stereo 125kbps [A: Hisilicon AUDIO [eng] (aac lc, 48000 Hz, stereo, 125 kb/s)]
+
+1080p 60fps
+Video: MPEG4 Video (H264) 1920x1080 60fps 45499kbps [V: Hisilicon VIDEO [eng] (h264 main L4.2, yuv420p, 1920x1080, 45499 kb/s)]
+Audio: AAC 48000Hz stereo 125kbps [A: Hisilicon AUDIO [eng] (aac lc, 48000 Hz, stereo, 125 kb/s)]
+
+1080p 30fps?????? --> 720p 240fps
+Video: MPEG4 Video (H264) 1280x720 239.998fps 36204kbps [V: Hisilicon VIDEO [eng] (h264 main L3.1, yuv420p, 1280x720, 36204 kb/s)]
+Audio: AAC 48000Hz stereo 125kbps [A: Hisilicon AUDIO [eng] (aac lc, 48000 Hz, stereo, 125 kb/s)]

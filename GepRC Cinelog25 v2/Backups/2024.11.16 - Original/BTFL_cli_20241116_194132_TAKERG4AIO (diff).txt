@@ -1,0 +1,33 @@
+diff
+
+# version
+# Betaflight / STM32G47X (SG47) 4.5.0 Dec  8 2023 / 12:04:40 (b2ce40263) MSP API: 1.46
+
+# start the command batch
+batch start
+
+board_name TAKERG4AIO
+manufacturer_id GEPR
+
+# feature
+feature OSD
+
+# led
+led 0 0,0::C:1
+led 1 1,0::C:1
+led 2 2,0::C:1
+led 3 3,0::C:1
+
+# master
+set acc_calibration = -3,-30,39,1
+set osd_canvas_width = 30
+set osd_canvas_height = 13
+
+profile 0
+
+rateprofile 0
+
+# end the command batch
+batch end
+
+# 

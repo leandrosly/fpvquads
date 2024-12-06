@@ -41,4 +41,4 @@ YFS screw, 12.9 level hardness.
 
 ## Links
 
-- [Frame KHX7](https://web.archive.org/web/20201130134418/https://geprc.com/product/gep-khx7-elegant-frame/)
+- [Frame GEP-KHX7](https://web.archive.org/web/20201130134418/https://geprc.com/product/gep-khx7-elegant-frame/)

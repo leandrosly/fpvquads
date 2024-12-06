@@ -1,4 +1,4 @@
-# Eachine Tyro99
+# Eachine Tyro99 [TyroFrank]
 
 ## TODO
 

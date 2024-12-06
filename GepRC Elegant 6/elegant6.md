@@ -1,4 +1,6 @@
-# TODO GepRC Elegant 6
+# GepRC Elegant 6
+
+## TODO
 
 - Desativar OSD da câmera ✔
 - Ajustar detalhes no OSD ✔

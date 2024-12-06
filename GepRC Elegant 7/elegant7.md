@@ -2,7 +2,8 @@
 
 ## TODO
 
-## Info  
+## Frame
+
 ### Summary
 
 GEP-KHX , This is an elegant upgrade. The main feature of the removable arm is to reduce the loss cost. The GEP-HKX5 wheelbase is 230mm, GEP-HKX4 wheelbase 200mm, GEP-HKX6 wheelbase 260mm, GEP-HKX7 wheelbase 300mm. Still maintain good stability, center point concentration, suitable for Freestyle and racing.

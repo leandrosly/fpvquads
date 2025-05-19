@@ -2,6 +2,9 @@
 
 ## TODO
 
-- Configurar OSD padrão (copiar do Elegant 6)
+- Definir configurações para RC2
+- Preset RX (trocar entre SBUS e CRSF)
+- Configurar OSD digital
 - Verificar fonte "Digital" no OSD
-- Instalar VTX
+- Instalar VTX O3 ✔
+- ESC melody Mario ✔

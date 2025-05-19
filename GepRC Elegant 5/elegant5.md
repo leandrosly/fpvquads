@@ -5,6 +5,7 @@
 - Ajustar detalhes no OSD ✔
 - Verificar fonte "Digital" no OSD ✔
 - Configurar OSD stats
+- Verificar telemetria
 
 ## Frame
 

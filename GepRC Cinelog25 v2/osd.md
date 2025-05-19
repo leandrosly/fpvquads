@@ -1,67 +1,67 @@
 # OSD Elements
 
-Ajustment range
-Altitude (barometro ou gps)
-Angle pitch
-Angle roll
-Anti gravity
-Artificial horizon
-Artificial horizon sidebars
-Battery average cell voltage
-Battery current draw
-Battery current mAh drawn
-Battery efficiency (gps)
-Battery usage
-Battery voltage
-Blackbox log status
-Camera frame (osd_camera_frame_width = 24; osd_camera_frame_height = 11)
-Compass bar (bussola melhor ou gps)
-Core temperature
-Craft name
-Crosshairs
-Debug (get debug)
-Disarmed
-Display name
-ESC RPM
-ESC RPM frequency
-ESC temperature
-Flight distance
-Flip after crash arrow
-Fly mode
-G force
-GPS latitude
-GPS longitude
-GPS sats
-GPS speed
-Home direction
-Home distance
-Link quality
-Motor diagnostics
-Numerical heading
-Numerical vario
-PID pitch
-PID roll
-PID yaw
-Power
-Profile: OSD profile name
-Profile: PID and rate
-Profile: PID profile name
-Profile: rate profile name
-RC Channels (radio)
-RSSI dBm value
-RSSI value
-RTC date and time
-Stick overlay left
-Stick overlay right
-Throttle position
-Timer 1
-Timer 2
-Timer: remaining time estimate
-Total flights
-Tx uplink power (crossfire?)
-Up (Pitch 90 deg)/Down (Pitch -90 deg) Reference
-VTX Channel
-Warnings
+Ajustment range  
+Altitude (barometro ou gps)  
+Angle pitch  
+Angle roll  
+Anti gravity  
+Artificial horizon  
+Artificial horizon sidebars  
+Battery average cell voltage  
+Battery current draw  
+Battery current mAh drawn  
+Battery efficiency (gps)  
+Battery usage  
+Battery voltage  
+Blackbox log status  
+Camera frame (osd_camera_frame_width = 24; osd_camera_frame_height = 11)  
+Compass bar (bussola melhor ou gps)  
+Core temperature  
+Craft name  
+Crosshairs  
+Debug (get debug)  
+Disarmed  
+Display name  
+ESC RPM  
+ESC RPM frequency  
+ESC temperature  
+Flight distance  
+Flip after crash arrow  
+Fly mode  
+G force  
+GPS latitude  
+GPS longitude  
+GPS sats  
+GPS speed  
+Home direction  
+Home distance  
+Link quality  
+Motor diagnostics  
+Numerical heading  
+Numerical vario  
+PID pitch  
+PID roll  
+PID yaw  
+Power  
+Profile: OSD profile name  
+Profile: PID and rate  
+Profile: PID profile name  
+Profile: rate profile name  
+RC Channels (radio)  
+RSSI dBm value  
+RSSI value  
+RTC date and time  
+Stick overlay left  
+Stick overlay right  
+Throttle position  
+Timer 1  
+Timer 2  
+Timer: remaining time estimate  
+Total flights  
+Tx uplink power (crossfire?)  
+Up (Pitch 90 deg)/Down (Pitch -90 deg) Reference  
+VTX Channel  
+Warnings  
 
 ...
 

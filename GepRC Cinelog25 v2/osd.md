@@ -1,4 +1,6 @@
-# OSD Elements
+# OSD
+
+## Elements
 
 Ajustment range  
 Altitude (barometro ou gps)  
@@ -65,7 +67,7 @@ Warnings
 
 ...
 
-# Warnings
+## Warnings
 
 ✔ Arming disabled  
 ✔ Battery critical (vbat_min_cell_voltage = 330)  
@@ -86,7 +88,7 @@ RSSI (%)
 ✔ Visual beeper  
 .. termina aqui? achei que tinha mais  
 
-# Post Flight Statistics
+## Post Flight Statistics
 
 Altitude maximum  
 ✔ Battery current draw maximum  

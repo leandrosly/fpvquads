@@ -67,48 +67,48 @@ Warnings
 
 # Warnings
 
-✔ Arming disabled
-✔ Battery critical (vbat_min_cell_voltage = 330)
-✔ Battery not full
-Battery over capacity
-Battery warning
-Core temperature (osd_core_temp_alarm = 70)
-✔ Crash flip mode
-✔ ESC fail
-✔ Failsafe
-GPS Rescue disabled
-GPS Rescue unavailable
-Launch control
-✔ Link quality (osd_link_quality_alarm = 80) [Revisar LQ]
-✔ RC Smoothing failure
-RSSI (%)
-✔ RSSI dBm (actual value) (osd_rssi_dbm_alarm = -60)
-✔ Visual beeper
-.. termina aqui? achei que tinha mais
+✔ Arming disabled  
+✔ Battery critical (vbat_min_cell_voltage = 330)  
+✔ Battery not full  
+Battery over capacity  
+Battery warning  
+Core temperature (osd_core_temp_alarm = 70)  
+✔ Crash flip mode  
+✔ ESC fail  
+✔ Failsafe  
+GPS Rescue disabled  
+GPS Rescue unavailable  
+Launch control  
+✔ Link quality (osd_link_quality_alarm = 80) [Revisar LQ]  
+✔ RC Smoothing failure  
+RSSI (%)  
+✔ RSSI dBm (actual value) (osd_rssi_dbm_alarm = -60)  
+✔ Visual beeper  
+.. termina aqui? achei que tinha mais  
 
 # Post Flight Statistics
 
-Altitude maximum
-✔ Battery current draw maximum
-✔ Battery mAh used
-✔ Battery voltage
-✔ Battery voltage end
-✔ Battery voltage minimum
-Blackbox number
-Blackbox usage
-✔ ESC RPM maximum
-✔ ESC temperature maximum (não sei se funciona)
-FFT maximum
-Flight distance
-Flight distance total
-Flights count total
-✔ Fly time total
-✔ G force maximum
-Home distance maximum
-✔ Link quality minimum
-✔ RSSI dBm Minimum
-✔ RSSI minimum
-RTC date and time (acho que não funciona) (verificar background script [lua])
-Speed maximum
-✔ Timer 1
-✔ Timer 2
+Altitude maximum  
+✔ Battery current draw maximum  
+✔ Battery mAh used  
+✔ Battery voltage  
+✔ Battery voltage end  
+✔ Battery voltage minimum  
+Blackbox number  
+Blackbox usage  
+✔ ESC RPM maximum  
+✔ ESC temperature maximum (não sei se funciona)  
+FFT maximum  
+Flight distance  
+Flight distance total  
+Flights count total  
+✔ Fly time total  
+✔ G force maximum  
+Home distance maximum  
+✔ Link quality minimum  
+✔ RSSI dBm Minimum  
+✔ RSSI minimum  
+RTC date and time (acho que não funciona) (verificar background script [lua])  
+Speed maximum  
+✔ Timer 1  
+✔ Timer 2  

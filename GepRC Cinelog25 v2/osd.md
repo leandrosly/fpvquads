@@ -9,9 +9,11 @@
 ❌ Anti gravity  
 ❌ Artificial horizon  
 ❌ Artificial horizon sidebars  
+❌ Aux value  
 🔧 Battery average cell voltage  
 ✔️ Battery current draw  
 ✔️ Battery current mAh drawn  
+🔧 Battery current Wh drawn  
 ❌ Battery efficiency (gps)  
 ❌ Battery usage  
 ✔️ Battery voltage  
@@ -22,15 +24,22 @@
 ✔️ Craft name  
 ❌ Crosshairs  
 ❌ Debug (get debug)  
-Disarmed  
-Display name  
-ESC RPM  
-ESC RPM frequency  
-ESC temperature  
+🔧 Disarmed  
+🔧 ESC RPM  
+🔧 ESC RPM frequency  
+❌ ESC temperature  
 ❌ Flight distance  
 ❌ Flip after crash arrow  
 🔧 Fly mode  
-G force  
+🔧 G force  
+❌ Goggle DVR status  
+❌ Goggle fan speed  
+❌ Goggle link quality  
+❌ Goggle system warnings  
+❌ Goggle voltage  
+❌ GPS lap time best 3  
+❌ GPS lap time current  
+❌ GPS lap time previous  
 ❌ GPS latitude  
 ❌ GPS longitude  
 ❌ GPS sats  
@@ -44,15 +53,18 @@ G force
 🔧 PID pitch  
 🔧 PID roll  
 🔧 PID yaw  
-Power  
-Profile: OSD profile name  
-Profile: PID and rate  
-Profile: PID profile name  
-Profile: rate profile name  
-🔧 RC Channels (radio)  
-RSSI dBm value  
-RSSI value  
-RTC date and time  
+❌ Pilot name  
+🔧 Power  
+🔧 Profile: OSD profile name  
+🔧 Profile: PID and rate  
+🔧 Profile: PID profile name  
+🔧 Profile: rate profile name  
+❌ RC Channels (radio)  
+❌ Ready mode  
+❔ RSNR Value  
+❔ RSSI dBm value  
+❔ RSSI value  
+🔧 RTC date and time  
 🔧 Stick overlay left  
 🔧 Stick overlay right  
 🔧 Throttle position  
@@ -62,7 +74,13 @@ RTC date and time
 ❌ Total flights  
 ❌ Tx uplink power (crossfire?)  
 ❌ Up (Pitch 90 deg)/Down (Pitch -90 deg) Reference  
+❌ VTX bitrate  
 ❌ VTX Channel  
+❌ VTX delay  
+❌ VTX distance  
+❌ VTX DVR status  
+❌ VTX temperature  
+❌ VTX voltage  
 ✔️ Warnings  
 
 ...

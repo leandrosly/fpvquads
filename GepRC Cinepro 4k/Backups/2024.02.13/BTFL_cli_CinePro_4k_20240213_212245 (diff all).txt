@@ -1,0 +1,160 @@
+diff all
+
+# version
+# Betaflight / STM32F405 (S405) 4.2.8 Feb 15 2021 / 12:08:36 (101738d8e) MSP API: 1.43
+# config: manufacturer_id: AIRB, board_name: OMNIBUSF4SD, version: 3a35e73b, date: 2019-09-30T05:46:12Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name OMNIBUSF4SD
+manufacturer_id AIRB
+mcu_id 00260047594b500620323457
+signature 
+
+# name: CinePro 4k
+
+# feature
+feature -AIRMODE
+feature SOFTSERIAL
+feature TELEMETRY
+feature RSSI_ADC
+feature LED_STRIP
+
+# beeper
+beeper -ARMING_GPS_FIX
+beeper -GPS_STATUS
+beeper -READY_BEEP
+beeper -ON_USB
+
+# serial
+serial 2 8192 115200 57600 0 115200
+
+# led
+led 0 4,5::CTOB:0
+led 1 5,5::CTOB:0
+led 2 6,5::CTOB:0
+led 3 7,5::CTOB:0
+led 4 8,5::CTOB:0
+led 5 9,5::CTOB:0
+led 6 10,5::CTOB:0
+led 7 11,5::CTOB:0
+led 8 4,6::CTOB:0
+led 9 5,6::CTOB:0
+led 10 6,6::CTOB:0
+led 11 7,6::CTOB:0
+led 12 8,6::CTOB:0
+led 13 9,6::CTOB:0
+led 14 10,6::CTOB:0
+led 15 11,6::CTOB:0
+led 16 4,7::CTOB:0
+led 17 5,7::CTOB:0
+led 18 6,7::CTOB:0
+led 19 7,7::CTOB:0
+led 20 8,7::CTOB:0
+led 21 9,7::CTOB:0
+led 22 10,7::CTOB:0
+led 23 11,7::CTOB:0
+led 24 4,8::CTOB:0
+led 25 5,8::CTOB:0
+led 26 6,8::CTOB:0
+led 27 7,8::CTOB:0
+led 28 8,8::CTOB:0
+led 29 9,8::CTOB:0
+led 30 10,8::CTOB:0
+led 31 11,8::CTOB:0
+
+# mode_color
+mode_color 5 0 9
+mode_color 5 1 11
+mode_color 5 2 2
+mode_color 5 3 13
+mode_color 5 4 10
+mode_color 5 5 3
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 27 3 1700 2100 0 0
+aux 4 13 2 1700 2100 0 0
+aux 5 19 2 1300 1700 0 0
+aux 6 28 1 900 1300 0 0
+aux 7 30 1 1300 1700 0 0
+aux 8 32 4 1300 1700 0 0
+aux 9 33 4 1700 2100 0 0
+
+# master
+set acc_trim_roll = 1
+set acc_calibration = -42,31,-120,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rc_smoothing_type = INTERPOLATION
+set serialrx_provider = SBUS
+set dshot_idle_value = 450
+set motor_pwm_protocol = DSHOT600
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_vbat_pos = 2103
+set osd_link_quality_pos = 2092
+set osd_tim_1_pos = 2433
+set osd_flymode_pos = 2401
+set osd_ah_sbar_pos = 207
+set osd_ah_pos = 2127
+set osd_current_pos = 2134
+set osd_mah_drawn_pos = 2168
+set osd_craft_name_pos = 2081
+set osd_display_name_pos = 65
+set osd_home_dir_pos = 2460
+set osd_home_dist_pos = 2488
+set osd_flight_dist_pos = 2520
+set osd_altitude_pos = 2465
+set osd_warnings_pos = 14570
+set osd_disarmed_pos = 149
+set osd_rtc_date_time_pos = 457
+set osd_core_temp_pos = 2497
+set osd_efficiency_pos = 97
+set gyro_1_align_yaw = 2700
+set name = CinePro 4k
+set display_name = Joao Victor
+
+profile 0
+
+# profile 0
+set p_pitch = 50
+set i_pitch = 50
+set d_pitch = 27
+set p_roll = 46
+set i_roll = 45
+set d_roll = 25
+set p_yaw = 65
+set i_yaw = 45
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

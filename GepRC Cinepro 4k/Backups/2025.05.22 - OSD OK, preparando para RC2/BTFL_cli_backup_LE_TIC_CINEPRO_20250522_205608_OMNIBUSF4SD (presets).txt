@@ -1,0 +1,249 @@
+defaults nosave
+
+
+# version
+# Betaflight / STM32F405 (S405) 4.5.2 May 16 2025 / 23:59:46 (024f8e13d) MSP API: 1.46
+# config rev: 3377c6c
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name OMNIBUSF4SD
+manufacturer_id AIRB
+mcu_id 00260047594b500620323457
+signature 
+
+# name: Le_Tic Cinepro
+
+# feature
+feature -AIRMODE
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 2 131073 115200 57600 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -ARMING_GPS_FIX
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -ON_USB
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_SET
+
+# led
+led 0 6,4::CTOBIW:0
+led 1 7,4::CTOBIW:0
+led 2 8,4::CTOBIW:0
+led 3 9,4::CTOBIW:0
+led 4 6,5::CTOBIW:0
+led 5 7,5::CTOBIW:0
+led 6 8,5::CTOBIW:0
+led 7 9,5::CTOBIW:0
+led 8 6,6::CTOBIW:0
+led 9 7,6::CTOBIW:0
+led 10 8,6::CTOBIW:0
+led 11 9,6::CTOBIW:0
+led 12 6,7::CTOBIW:0
+led 13 7,7::CTOBIW:0
+led 14 8,7::CTOBIW:0
+led 15 9,7::CTOBIW:0
+led 16 6,8::CTOBIW:0
+led 17 7,8::CTOBIW:0
+led 18 8,8::CTOBIW:0
+led 19 9,8::CTOBIW:0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 2 1300 1700 0 0
+aux 3 19 3 1700 2100 0 0
+aux 4 20 3 1300 1700 0 0
+aux 5 28 1 900 1700 0 0
+aux 6 35 2 1700 2100 0 0
+aux 7 47 1 1300 1700 0 0
+
+# adjrange
+adjrange 0 0 3 900 2100 29 3 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 1000
+set dyn_notch_count = 0
+set dyn_notch_min_hz = 125
+set dyn_notch_max_hz = 850
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = -76,56,-122,1
+set baro_hardware = NONE
+set min_check = 1010
+set max_check = 1990
+set blackbox_disable_pids = ON
+set blackbox_disable_rc = ON
+set blackbox_disable_setpoint = ON
+set blackbox_disable_bat = ON
+set blackbox_disable_alt = ON
+set blackbox_disable_rssi = ON
+set blackbox_disable_gyro = ON
+set blackbox_disable_gyrounfilt = ON
+set blackbox_disable_acc = ON
+set blackbox_disable_debug = ON
+set blackbox_disable_motors = ON
+set blackbox_disable_rpm = ON
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set vbat_warning_cell_voltage = 349
+set beeper_dshot_beacon_tone = 3
+set small_angle = 180
+set deadband = 2
+set yaw_deadband = 2
+set pid_process_denom = 2
+set simplified_gyro_filter_multiplier = 200
+set osd_warn_bitmask = 263167
+set osd_rssi_alarm = 30
+set osd_cap_alarm = 1300
+set osd_tim1 = 2562
+set osd_tim2 = 1283
+set osd_vbat_pos = 14851
+set osd_rssi_pos = 15400
+set osd_link_quality_pos = 14392
+set osd_link_tx_power_pos = 1411
+set osd_rssi_dbm_pos = 15393
+set osd_rsnr_pos = 14396
+set osd_tim_1_pos = 8771
+set osd_tim_2_pos = 14883
+set osd_remaining_time_estimate_pos = 1488
+set osd_flymode_pos = 9613
+set osd_anti_gravity_pos = 130
+set osd_g_force_pos = 8611
+set osd_throttle_pos = 8515
+set osd_vtx_channel_pos = 16853
+set osd_crosshairs_pos = 409
+set osd_ah_sbar_pos = 314
+set osd_ah_pos = 186
+set osd_current_pos = 14466
+set osd_mah_drawn_pos = 14498
+set osd_wh_drawn_pos = 8419
+set osd_motor_diag_pos = 1257
+set osd_craft_name_pos = 14371
+set osd_pilot_name_pos = 578
+set osd_flight_dist_pos = 1059
+set osd_compass_bar_pos = 450
+set osd_altitude_pos = 34
+set osd_pid_roll_pos = 8623
+set osd_pid_pitch_pos = 8591
+set osd_pid_yaw_pos = 8655
+set osd_debug_pos = 546
+set osd_power_pos = 8388
+set osd_pidrate_profile_pos = 9517
+set osd_warnings_pos = 14613
+set osd_avg_cell_voltage_pos = 8675
+set osd_pit_ang_pos = 9293
+set osd_rol_ang_pos = 9325
+set osd_battery_usage_pos = 354
+set osd_disarmed_pos = 8503
+set osd_nheading_pos = 1289
+set osd_up_down_reference_pos = 1106
+set osd_ready_mode_pos = 1545
+set osd_nvario_pos = 1321
+set osd_esc_tmp_pos = 386
+set osd_esc_rpm_pos = 8308
+set osd_esc_rpm_freq_pos = 8316
+set osd_rtc_date_time_pos = 8817
+set osd_adjustment_range_pos = 2
+set osd_flip_arrow_pos = 1091
+set osd_core_temp_pos = 8451
+set osd_log_status_pos = 418
+set osd_stick_overlay_left_pos = 8426
+set osd_stick_overlay_right_pos = 9444
+set osd_rate_profile_name_pos = 9581
+set osd_pid_profile_name_pos = 9549
+set osd_profile_name_pos = 9485
+set osd_camera_frame_pos = 143
+set osd_efficiency_pos = 322
+set osd_total_flights_pos = 1392
+set osd_aux_pos = 162
+set osd_sys_goggle_voltage_pos = 552
+set osd_sys_vtx_voltage_pos = 439
+set osd_sys_bitrate_pos = 1443
+set osd_sys_delay_pos = 1507
+set osd_sys_distance_pos = 470
+set osd_sys_lq_pos = 521
+set osd_sys_goggle_dvr_pos = 555
+set osd_sys_vtx_dvr_pos = 467
+set osd_sys_warnings_pos = 518
+set osd_sys_vtx_temp_pos = 437
+set osd_sys_fan_speed_pos = 519
+set osd_stat_bitmask = 2246631
+set rpm_filter_harmonics = 2
+set craft_name = Le_Tic Cinepro
+set pilot_name = Le_Tic
+
+profile 0
+
+# profile 0
+set profile_name = CRGoFilm
+set anti_gravity_gain = 85
+set p_pitch = 56
+set i_pitch = 100
+set d_pitch = 49
+set f_pitch = 149
+set d_roll = 36
+set d_min_roll = 27
+set d_min_pitch = 36
+set d_max_advance = 0
+set thrust_linear = 20
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+set dyn_idle_min_rpm = 50
+set simplified_d_gain = 90
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 120
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = CRGoFilm
+set roll_rc_rate = 5
+set pitch_rc_rate = 5
+set yaw_rc_rate = 5
+set roll_srate = 50
+set pitch_srate = 50
+set yaw_srate = 50
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration

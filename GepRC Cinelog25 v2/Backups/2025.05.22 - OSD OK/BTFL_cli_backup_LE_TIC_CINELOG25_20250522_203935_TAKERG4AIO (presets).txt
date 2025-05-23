@@ -1,0 +1,221 @@
+defaults nosave
+
+
+# version
+# Betaflight / STM32G47X (SG47) 4.5.2 Apr 28 2025 / 22:31:23 (024f8e13d) MSP API: 1.46
+# config rev: cbc4b7e
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name TAKERG4AIO
+manufacturer_id GEPR
+mcu_id 004e001e5246501420333536
+signature 
+
+# name: Le_Tic CineLog25
+
+# feature
+feature TELEMETRY
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -ARMING_GPS_FIX
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -ON_USB
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_SET
+
+# aux
+aux 0 0 1 1700 2100 0 0
+aux 1 0 1 900 1300 0 0
+aux 2 1 0 900 1300 0 0
+aux 3 13 3 1700 2100 0 0
+aux 4 19 2 1700 2100 0 0
+aux 5 35 1 900 1300 0 0
+aux 6 36 3 1700 2100 0 0
+aux 7 47 0 1300 1700 0 0
+
+# adjrange
+adjrange 0 0 4 900 2100 29 4 0 0
+
+# master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 125
+set dyn_notch_max_hz = 750
+set acc_calibration = -3,2,-90,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 1010
+set max_check = 1990
+set serialrx_provider = SBUS
+set sbus_baud_fast = ON
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set motor_output_reordering = 0,2,1,3,4,5,6,7
+set align_board_yaw = 0
+set small_angle = 180
+set deadband = 2
+set yaw_deadband = 2
+set osd_warn_bitmask = 263167
+set osd_rssi_alarm = 30
+set osd_cap_alarm = 1300
+set osd_tim1 = 2562
+set osd_tim2 = 1283
+set osd_vbat_pos = 14851
+set osd_rssi_pos = 15400
+set osd_link_quality_pos = 14392
+set osd_link_tx_power_pos = 1411
+set osd_rssi_dbm_pos = 15393
+set osd_rsnr_pos = 14396
+set osd_tim_1_pos = 8771
+set osd_tim_2_pos = 14883
+set osd_remaining_time_estimate_pos = 1488
+set osd_flymode_pos = 9613
+set osd_anti_gravity_pos = 130
+set osd_g_force_pos = 8611
+set osd_throttle_pos = 8515
+set osd_vtx_channel_pos = 16853
+set osd_crosshairs_pos = 409
+set osd_ah_sbar_pos = 314
+set osd_ah_pos = 186
+set osd_current_pos = 14466
+set osd_mah_drawn_pos = 14498
+set osd_wh_drawn_pos = 8419
+set osd_motor_diag_pos = 1257
+set osd_craft_name_pos = 14371
+set osd_pilot_name_pos = 578
+set osd_flight_dist_pos = 1059
+set osd_compass_bar_pos = 450
+set osd_altitude_pos = 34
+set osd_pid_roll_pos = 8623
+set osd_pid_pitch_pos = 8591
+set osd_pid_yaw_pos = 8655
+set osd_debug_pos = 546
+set osd_power_pos = 8388
+set osd_pidrate_profile_pos = 9517
+set osd_warnings_pos = 14613
+set osd_avg_cell_voltage_pos = 8675
+set osd_pit_ang_pos = 9293
+set osd_rol_ang_pos = 9325
+set osd_battery_usage_pos = 354
+set osd_disarmed_pos = 8503
+set osd_nheading_pos = 1289
+set osd_up_down_reference_pos = 1106
+set osd_ready_mode_pos = 1545
+set osd_nvario_pos = 1321
+set osd_esc_tmp_pos = 386
+set osd_esc_rpm_pos = 8308
+set osd_esc_rpm_freq_pos = 8316
+set osd_rtc_date_time_pos = 8817
+set osd_adjustment_range_pos = 2
+set osd_flip_arrow_pos = 1091
+set osd_core_temp_pos = 8451
+set osd_log_status_pos = 418
+set osd_stick_overlay_left_pos = 8426
+set osd_stick_overlay_right_pos = 9444
+set osd_rate_profile_name_pos = 9581
+set osd_pid_profile_name_pos = 9549
+set osd_profile_name_pos = 9485
+set osd_camera_frame_pos = 143
+set osd_efficiency_pos = 322
+set osd_total_flights_pos = 1392
+set osd_aux_pos = 162
+set osd_sys_goggle_voltage_pos = 552
+set osd_sys_vtx_voltage_pos = 439
+set osd_sys_bitrate_pos = 1443
+set osd_sys_delay_pos = 1507
+set osd_sys_distance_pos = 470
+set osd_sys_lq_pos = 521
+set osd_sys_goggle_dvr_pos = 555
+set osd_sys_vtx_dvr_pos = 467
+set osd_sys_warnings_pos = 518
+set osd_sys_vtx_temp_pos = 437
+set osd_sys_fan_speed_pos = 519
+set osd_stat_bitmask = 2246631
+set osd_profile = 2
+set gyro_1_sensor_align = CW180FLIP
+set gyro_1_align_pitch = 1800
+set gyro_1_align_yaw = 1800
+set craft_name = Le_Tic CineLog25
+set pilot_name = Le_Tic
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 90
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_static_hz = 90
+set dterm_lpf2_static_hz = 180
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 90
+set iterm_relax_cutoff = 10
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 0
+set p_pitch = 56
+set i_pitch = 50
+set d_pitch = 57
+set f_pitch = 194
+set p_roll = 53
+set i_roll = 47
+set d_roll = 50
+set f_roll = 187
+set p_yaw = 53
+set i_yaw = 47
+set f_yaw = 187
+set d_min_roll = 50
+set d_min_pitch = 57
+set thrust_linear = 40
+set dyn_idle_min_rpm = 35
+set simplified_master_multiplier = 120
+set simplified_i_gain = 50
+set simplified_d_gain = 140
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 130
+set simplified_dterm_filter_multiplier = 120
+set ez_landing_limit = 5
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 3
+
+# save configuration

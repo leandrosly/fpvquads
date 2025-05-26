@@ -1,0 +1,125 @@
+diff all
+
+# version
+# Betaflight / STM32F405 (S405) 4.2.8 Feb 15 2021 / 12:08:36 (101738d8e) MSP API: 1.43
+# config: manufacturer_id: AIRB, board_name: OMNIBUSF4SD, version: 3a35e73b, date: 2019-09-30T05:46:12Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name OMNIBUSF4SD
+manufacturer_id AIRB
+mcu_id 001b00353252501820383856
+signature 
+
+# name: Elegant
+
+# feature
+feature -RX_SERIAL
+feature -AIRMODE
+feature TELEMETRY
+feature RX_PARALLEL_PWM
+feature RSSI_ADC
+feature LED_STRIP
+
+# beeper
+beeper -ON_USB
+
+# serial
+serial 5 0 115200 57600 0 115200
+
+# led
+led 0 7,7::ATOIW:0
+led 1 7,8::ATOIW:0
+led 2 7,9::ATO:10
+led 3 7,10::ATO:10
+led 4 7,11::ATO:10
+led 5 7,12::ATO:10
+led 6 7,13::ATO:10
+led 7 7,14::ATO:10
+led 8 7,15::ATO:10
+led 9 8,7::ATOIW:0
+led 10 8,8::ATOIW:0
+led 11 8,9::ATOIW:0
+led 12 8,10::ATOIW:0
+led 13 8,11::ATOIW:0
+led 14 8,12::ATOIW:0
+led 15 8,13::ATOIW:0
+led 16 8,14::ATOIW:0
+led 17 8,15::ATOIW:0
+
+# mode_color
+mode_color 7 0 0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 2 1300 1700 0 0
+aux 3 19 3 1700 2100 0 0
+aux 4 20 3 1300 1700 0 0
+aux 5 28 1 900 1700 0 0
+aux 6 35 2 1700 2100 0 0
+aux 7 47 1 1300 1700 0 0
+
+# rxfail
+rxfail 6 s 1500
+
+# master
+set acc_calibration = 74,114,-4224,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set fpv_mix_degrees = 30
+set blackbox_device = NONE
+set dshot_idle_value = 450
+set motor_pwm_protocol = DSHOT600
+set align_board_roll = 180
+set vbat_scale = 109
+set small_angle = 180
+set pid_process_denom = 2
+set osd_warn_rssi = ON
+set osd_warn_link_quality = ON
+set osd_warn_rssi_dbm = ON
+set osd_warn_over_cap = ON
+set osd_vbat_pos = 2082
+set osd_tim_1_pos = 2158
+set osd_tim_2_pos = 2166
+set osd_flymode_pos = 2477
+set osd_throttle_pos = 2242
+set osd_current_pos = 2273
+set osd_mah_drawn_pos = 2305
+set osd_craft_name_pos = 2092
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set gyro_1_align_yaw = 2700
+set name = Elegant
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

@@ -1,0 +1,161 @@
+defaults nosave
+
+
+# version
+# Betaflight / STM32F405 (S405) 4.3.0 Apr  6 2022 / 07:49:51 (2fd2e8eca) MSP API: 1.44
+# config: manufacturer_id: DIAT, board_name: FURYF4OSD, version: acd41165, date: 2021-04-27T20:17:19Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name FURYF4OSD
+manufacturer_id DIAT
+mcu_id 004e00375853501620383658
+signature 
+
+# name: Le_Tic Elegant
+
+# timer
+timer B01 AF1
+# pin B01: TIM1 CH3N (AF1)
+
+# dma
+dma pin B01 0
+# pin B01: DMA2 Stream 6 Channel 0
+
+# feature
+feature -AIRMODE
+feature TELEMETRY
+feature LED_STRIP
+
+# serial
+serial 5 64 115200 57600 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -ARMING_GPS_FIX
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -ON_USB
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_SET
+
+# led
+led 0 12,12::C:1
+led 1 13,12::C:1
+led 2 14,12::C:1
+led 3 15,12::C:1
+led 4 12,13::C:1
+led 5 13,13::C:1
+led 6 14,13::C:1
+led 7 15,13::C:1
+led 8 12,14::C:1
+led 9 13,14::C:1
+led 10 14,14::C:1
+led 11 15,14::C:1
+led 12 12,15::C:1
+led 13 13,15::C:1
+led 14 14,15::C:1
+led 15 15,15::C:1
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 2 1300 1700 0 0
+aux 3 19 3 1700 2100 0 0
+aux 4 20 3 1300 1700 0 0
+aux 5 26 0 1700 2100 0 0
+aux 6 28 1 900 1700 0 0
+aux 7 35 2 1700 2100 0 0
+aux 8 47 1 1300 1700 0 0
+
+# adjrange
+adjrange 0 0 3 900 2100 29 3 0 0
+
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BAND_B   B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BAND_E   E CUSTOM  5705 5685 5665 5665 5885 5905 5905 5905
+vtxtable band 4 AIRWAVE  F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 4
+vtxtable powervalues 14 26 29 32
+vtxtable powerlabels 25 400 800 MAX
+
+# master
+set acc_calibration = -4,15,-234,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 1015
+set max_check = 1980
+set serialrx_provider = CRSF
+set blackbox_device = NONE
+set dshot_idle_value = 300
+set motor_output_reordering = 2,3,0,1,4,5,6,7
+set align_board_roll = 180
+set small_angle = 180
+set deadband = 2
+set yaw_deadband = 2
+set osd_craft_name_pos = 2081
+set enable_stick_arming = ON
+set vtx_band = 3
+set vtx_channel = 3
+set vtx_power = 1
+set vtx_freq = 5665
+set gyro_1_align_yaw = 1800
+set gyro_2_spibus = 1
+set name = Le_Tic Elegant
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 2
+set pitch_rc_rate = 2
+set yaw_rc_rate = 2
+set roll_expo = 25
+set pitch_expo = 25
+set yaw_expo = 20
+set roll_srate = 72
+set pitch_srate = 72
+set tpa_breakpoint = 1750
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration

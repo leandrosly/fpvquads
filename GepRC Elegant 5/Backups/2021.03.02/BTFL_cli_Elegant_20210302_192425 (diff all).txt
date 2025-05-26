@@ -1,0 +1,207 @@
+diff all
+
+# version
+# Betaflight / OMNIBUSF4SD (OBSD) 3.5.7 Mar 15 2019 / 22:11:36 (e9130527c) MSP API: 1.40
+
+board_name OMNIBUSF4SD
+manufacturer_id 
+mcu_id 001b00353252501820383856
+signature 
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+name Elegant
+
+# resources
+resource MOTOR 1 A03
+resource MOTOR 2 A02
+resource MOTOR 3 B00
+resource MOTOR 4 B01
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature TELEMETRY
+feature RSSI_ADC
+feature LED_STRIP
+
+# beeper
+beeper -ON_USB
+
+# beacon
+
+# map
+
+# serial
+serial 2 0 250000 57600 0 115200
+
+# led
+led 0 7,7::ATOIW:8
+led 1 7,8::ATOIW:8
+led 2 7,9::ATO:10
+led 3 7,10::ATO:10
+led 4 7,11::ATO:10
+led 5 7,12::ATO:10
+led 6 7,13::ATO:10
+led 7 7,14::ATO:10
+led 8 7,15::ATO:10
+led 9 8,7::ATOIW:0
+led 10 8,8::ATOIW:0
+led 11 8,9::ATOIW:0
+led 12 8,10::ATOIW:0
+led 13 8,11::ATOIW:0
+led 14 8,12::ATOIW:0
+led 15 8,13::ATOIW:0
+led 16 8,14::ATOIW:0
+led 17 8,15::ATOIW:0
+
+# color
+
+# mode_color
+mode_color 7 0 0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 2 1300 1700 0 0
+aux 3 19 3 1700 2100 0 0
+aux 4 20 3 1300 1700 0 0
+aux 5 28 1 900 1700 0 0
+aux 6 35 2 1700 2100 0 0
+aux 7 47 1 1300 1700 0 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+rxfail 6 s 1500
+
+# master
+set acc_calibration = 36,-51,154
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 1005
+set max_check = 1990
+set fpv_mix_degrees = 35
+set serialrx_provider = SBUS
+set blackbox_device = SERIAL
+set motor_pwm_protocol = DSHOT600
+set align_board_roll = 180
+set vbat_scale = 109
+set ibata_scale = 100
+set small_angle = 180
+set pid_process_denom = 1
+set osd_warn_core_temp = OFF
+set osd_vbat_pos = 2498
+set osd_rssi_pos = 65
+set osd_tim_1_pos = 2486
+set osd_tim_2_pos = 2518
+set osd_flymode_pos = 2509
+set osd_throttle_pos = 2273
+set osd_vtx_channel_pos = 377
+set osd_ah_pos = 200
+set osd_current_pos = 2466
+set osd_mah_drawn_pos = 2305
+set osd_craft_name_pos = 2477
+set osd_gps_speed_pos = 218
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 51
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 266
+set osd_altitude_pos = 247
+set osd_pid_roll_pos = 423
+set osd_pid_pitch_pos = 455
+set osd_pid_yaw_pos = 487
+set osd_debug_pos = 1
+set osd_power_pos = 321
+set osd_pidrate_profile_pos = 345
+set osd_warnings_pos = 329
+set osd_avg_cell_voltage_pos = 76
+set osd_pit_ang_pos = 257
+set osd_rol_ang_pos = 289
+set osd_battery_usage_pos = 392
+set osd_disarmed_pos = 138
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set vtx_channel = 2
+set vtx_freq = 5760
+set vcd_video_system = PAL
+set usb_hid_cdc = ON
+
+# profile
+profile 0
+
+set dterm_notch_cutoff = 0
+set vbat_pid_gain = ON
+set anti_gravity_gain = 8000
+set feedforward_transition = 30
+set smart_feedforward = ON
+set iterm_relax = RP
+set throttle_boost = 15
+set p_pitch = 46
+set p_roll = 42
+set abs_control_gain = 1
+
+# profile
+profile 1
+
+
+# profile
+profile 2
+
+
+# restore original profile selection
+profile 0
+
+# rateprofile
+rateprofile 0
+
+set roll_rc_rate = 110
+set pitch_rc_rate = 110
+set yaw_rc_rate = 130
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 10
+set roll_srate = 75
+set yaw_srate = 55
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+
+# rateprofile
+rateprofile 3
+
+
+# rateprofile
+rateprofile 4
+
+
+# rateprofile
+rateprofile 5
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

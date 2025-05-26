@@ -1,0 +1,233 @@
+diff all
+
+# version
+# Betaflight / STM32F405 (S405) 4.2.8 Feb 15 2021 / 12:08:36 (101738d8e) MSP API: 1.43
+# config: manufacturer_id: AIRB, board_name: OMNIBUSF4SD, version: 3a35e73b, date: 2019-09-30T05:46:12Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name OMNIBUSF4SD
+manufacturer_id AIRB
+mcu_id 001b00353252501820383856
+signature 
+
+# name: Le_Tic Elegant
+
+# resources
+resource MOTOR 1 A03
+resource MOTOR 2 A02
+resource MOTOR 3 B00
+resource MOTOR 4 B01
+
+# feature
+feature -AIRMODE
+feature TELEMETRY
+feature LED_STRIP
+
+# beeper
+beeper -ARMING_GPS_FIX
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -READY_BEEP
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 5 128 115200 57600 0 500000
+
+# led
+led 0 7,7::ATOIW:0
+led 1 7,8::ATOIW:0
+led 2 7,9::ATO:10
+led 3 7,10::ATO:10
+led 4 7,11::ATO:10
+led 5 7,12::ATO:10
+led 6 7,13::ATO:10
+led 7 7,14::ATO:10
+led 8 7,15::ATO:10
+led 9 8,7::ATOIW:0
+led 10 8,8::ATOIW:0
+led 11 8,9::ATOIW:0
+led 12 8,10::ATOIW:0
+led 13 8,11::ATOIW:0
+led 14 8,12::ATOIW:0
+led 15 8,13::ATOIW:0
+led 16 8,14::ATOIW:0
+led 17 8,15::ATOIW:0
+
+# mode_color
+mode_color 7 0 0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 2 1300 1700 0 0
+aux 3 19 3 1700 2100 0 0
+aux 4 20 3 1300 1700 0 0
+aux 5 26 0 1700 2100 0 0
+aux 6 28 1 900 1700 0 0
+aux 7 35 2 1700 2100 0 0
+aux 8 47 1 1300 1700 0 0
+
+# adjrange
+adjrange 0 0 3 900 2100 29 3 0 0
+
+# rxfail
+rxfail 6 s 1500
+
+# master
+set gyro_lowpass2_hz = 350
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_notch_max_hz = 350
+set dyn_lpf_gyro_min_hz = 280
+set dyn_lpf_gyro_max_hz = 700
+set acc_calibration = 74,114,-4224,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rssi_channel = 16
+set fpv_mix_degrees = 30
+set serialrx_provider = FPORT
+set serialrx_halfduplex = ON
+set blackbox_device = SERIAL
+set dshot_idle_value = 450
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set align_board_roll = 180
+set vbat_scale = 122
+set vbat_divider = 11
+set ibata_scale = 110
+set small_angle = 180
+set deadband = 2
+set osd_warn_no_gps_rescue = OFF
+set osd_warn_gps_rescue_disabled = OFF
+set osd_warn_rssi = ON
+set osd_warn_link_quality = ON
+set osd_warn_over_cap = ON
+set osd_rssi_alarm = 30
+set osd_cap_alarm = 1300
+set osd_tim2 = 1281
+set osd_vbat_pos = 6594
+set osd_rssi_pos = 6195
+set osd_tim_1_pos = 4556
+set osd_tim_2_pos = 6614
+set osd_flymode_pos = 4269
+set osd_throttle_pos = 194
+set osd_current_pos = 6241
+set osd_mah_drawn_pos = 6263
+set osd_craft_name_pos = 6178
+set osd_altitude_pos = 470
+set osd_pidrate_profile_pos = 6201
+set osd_warnings_pos = 14441
+set osd_avg_cell_voltage_pos = 4514
+set osd_pit_ang_pos = 4534
+set osd_rol_ang_pos = 4524
+set osd_disarmed_pos = 6411
+set osd_esc_tmp_pos = 66
+set osd_esc_rpm_pos = 4247
+set osd_esc_rpm_freq_pos = 4226
+set osd_rtc_date_time_pos = 425
+set osd_core_temp_pos = 4183
+set osd_stick_overlay_left_pos = 4353
+set osd_stick_overlay_right_pos = 4374
+set osd_stat_tim_1 = ON
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set osd_stat_max_g_force = ON
+set osd_stat_max_esc_rpm = ON
+set osd_stat_min_link_quality = ON
+set usb_hid_cdc = ON
+set gyro_1_align_yaw = 2700
+set gyro_rpm_notch_harmonics = 2
+set name = Le_Tic Elegant
+
+profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 238
+set dterm_lowpass2_hz = 210
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 69
+set d_pitch = 44
+set f_pitch = 171
+set p_roll = 63
+set d_roll = 40
+set f_roll = 162
+set p_yaw = 68
+set f_yaw = 162
+set d_min_roll = 0
+set d_min_pitch = 0
+set ff_interpolate_sp = AVERAGED_4
+
+profile 1
+
+# profile 1
+set dyn_lpf_dterm_min_hz = 91
+set dyn_lpf_dterm_max_hz = 221
+set dterm_lowpass2_hz = 195
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 60
+set f_pitch = 76
+set p_roll = 55
+set f_roll = 72
+set p_yaw = 59
+set f_yaw = 72
+set d_min_roll = 0
+set d_min_pitch = 0
+set ff_interpolate_sp = AVERAGED_4
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rates_type = ACTUAL
+set roll_rc_rate = 2
+set pitch_rc_rate = 2
+set yaw_rc_rate = 2
+set roll_expo = 25
+set pitch_expo = 25
+set yaw_expo = 20
+set roll_srate = 72
+set pitch_srate = 72
+set yaw_srate = 67
+set tpa_breakpoint = 1750
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
